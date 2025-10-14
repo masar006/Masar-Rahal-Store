@@ -1,57 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const cartItemsList = document.querySelector('.cart-items-list');
-  const summarySubtotal = document.querySelector('.summary-row span:nth-child(2)');
-  const summaryTotal = document.querySelector('.total-row span:nth-child(2)');
-  const summaryLabel = document.querySelector('.summary-row span:first-child');
+document.addEventListener("DOMContentLoaded", () => {
+  const cartItems = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
 
-  let cartItems = [
-    {
-      id: 1,
-      name: 'بوكس السفر الخارجي',
-      price: 499,
-      quantity: 1,
-      image: 'images/box-travel.jpeg'
-    },
-    {
-      id: 2,
-      name: 'حقيبة الإسعافات (صغير)',
-      price: 120,
-      quantity: 2,
-      image: 'images/box-firstaid-s.jpeg'
-    }
-  ];
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  function renderCart() {
-    cartItemsList.innerHTML = '';
+  if (cart.length === 0) {
+    cartItems.innerHTML = "<p>السلة فارغة.</p>";
+    cartTotal.innerHTML = "";
+    return;
+  }
 
-    if (cartItems.length === 0) {
-      cartItemsList.innerHTML = '<p style="text-align:center;">🛒 السلة فارغة حالياً</p>';
-      summarySubtotal.textContent = '0 ر.س';
-      summaryTotal.textContent = '0 ر.س';
-      summaryLabel.textContent = 'المجموع الفرعي (0 منتجات)';
-      return;
-    }
+  let total = 0;
+  cartItems.innerHTML = cart
+    .map(item => {
+      total += item.price;
+      return `<div class="cart-item">
+        <strong>${item.name}</strong> - ${item.price} ر.س
+      </div>`;
+    })
+    .join("");
 
-    let subtotal = 0;
-    let totalItems = 0;
-
-    cartItems.forEach(item => {
-      subtotal += item.price * item.quantity;
-      totalItems += item.quantity;
-
-      const itemDiv = document.createElement('div');
-      itemDiv.className = 'product-summary-item';
-      itemDiv.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" />
-        <div>
-          <div class="product-name-sm">${item.name}</div>
-          <div class="product-qty-sm">الكمية: 
-            <input type="number" min="1" value="${item.quantity}" data-id="${item.id}" class="qty-input" />
-            <button data-id="${item.id}" class="remove-btn">❌</button>
-          </div>
-        </div>
-      `;
-      cartItemsList.appendChild(itemDiv);
-    });
-
+  cartTotal.innerHTML = `<p><strong>الإجمالي:</strong> ${total} ر.س</p>`;
+});
     summarySubtotal.textContent = `${
