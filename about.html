@@ -3,29 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سلة المشتريات - مسار رحال</title>
+  <title>من نحن - مسار رحال</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="cart.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+
   <header class="header">
     <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
-    <nav class="nav">
+    <nav class="navbar">
       <a href="index.html">الرئيسية</a>
+      <a href="about.html" class="active">من نحن</a>
       <a href="adventure-boxes.html">بوكسات المغامرات</a>
-      <a href="contact.html">تواصل معنا</a>
+      <a href="firstaid-bags.html">حقائب الإسعافات</a>
+      <a href="contact.html">اتصل بنا</a>
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
     </nav>
   </header>
 
   <main class="products-section">
-    <h1 class="page-title">سلة المشتريات</h1>
-    <div id="cart-items"></div>
-    <div id="cart-total"></div>
-    <a href="checkout.html" class="btn">إتمام الطلب</a>
+    <h2 class="page-title">من نحن</h2>
+    <div class="about-content">
+      <p>نحن في <strong>مسار رحال</strong> نؤمن بأن كل رحلة تستحق أن تكون مجهزة بأفضل الأدوات. تأسسنا لتقديم منتجات مبتكرة ومختارة بعناية لعشاق المغامرات والسفر.</p>
+      <p>نحرص على الجودة، العملية، والتصميم الذكي في كل بوكس وكل حقيبة. هدفنا أن نجعل تجربتك في البر، البحر، أو السفر أكثر راحة وأمانًا.</p>
+      <p>فريقنا يتكوّن من مغامرين حقيقيين، يعرفون احتياجاتك ويختبرون المنتجات قبل أن تصل إليك.</p>
+      <p>شكرًا لاختيارك مسار رحال. نحن هنا لنرافقك في كل خطوة من مغامرتك.</p>
+    </div>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 مسار رحال</p>
+    <div class="footer-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+      <a href="terms.html">الشروط والأحكام</a>
+      <a href="return-policy.html">سياسة الإرجاع</a>
+      <a href="contact.html">اتصل بنا</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p style="text-align:center;">&copy; 2025 مسار رحال. جميع الحقوق محفوظة.</p>
   </footer>
+
 </body>
 </html>
