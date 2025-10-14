@@ -3,37 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تواصل معنا - مسار رحال</title>
+  <title>اتصل بنا - مسار رحال</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
   <header class="header">
-    <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
-    <nav class="nav">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
+    </div>
+    <nav class="navbar">
       <a href="index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
       <a href="adventure-boxes.html">بوكسات المغامرات</a>
-      <a href="contact.html">تواصل معنا</a>
+      <a href="firstaid-bags.html">حقائب الإسعافات</a>
+      <a href="contact.html" class="active">اتصل بنا</a>
     </nav>
+    <div class="icons">
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
   </header>
 
   <main class="products-section">
-    <h1 class="page-title">تواصل معنا</h1>
-    <form class="contact-form">
-      <label for="name">الاسم</label>
+    <h1 class="page-title">اتصل بنا</h1>
+    <form class="checkout-form">
+      <label for="name">الاسم الكامل</label>
       <input type="text" id="name" required />
 
       <label for="email">البريد الإلكتروني</label>
       <input type="email" id="email" required />
 
-      <label for="message">رسالتك</label>
+      <label for="message">الرسالة</label>
       <textarea id="message" rows="5" required></textarea>
 
-      <button type="submit">إرسال</button>
+      <button type="submit" class="btn btn-primary btn-final-checkout-btn">إرسال</button>
     </form>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 مسار رحال</p>
+    <div class="footer-links">
+      <a href="about.html">من نحن</a>
+      <a href="terms.html">الشروط والأحكام</a>
+      <a href="return-policy.html">سياسة الاسترجاع</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+    </div>
+    <div class="footer-contact">
+      <p>البريد الإلكتروني: support@rahhal.sa</p>
+      <p>رقم التواصل: 0550000000</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <p style="text-align:center;">&copy; 2025 مسار رحال. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.checkout-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('تم إرسال النموذج بنجاح!');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
   </footer>
 </body>
 </html>
