@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تواصل معنا - مسار رحال</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="checkout-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="adventure-boxes.html">بوكسات المغامرات</a>
+      <a href="firstaid-bags.html">حقائب الإسعافات</a>
+      <a href="about.html">من نحن</a>
+      <a href="terms.html">سياسة الاستخدام</a>
+      <a href="return-policy.html">سياسة الإرجاع</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div class="icons">
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <i class="fas fa-user"></i>
+    </div>
+  </header>
+
+  <main class="checkout-container">
+    <h1 class="page-title">تواصل معنا</h1>
+
+    <div class="checkout-layout">
+      <form class="checkout-form">
+        <h2>نموذج المراسلة</h2>
+
+        <div class="form-group">
+          <label for="contact-name">الاسم الكامل</label>
+          <input type="text" id="contact-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">البريد الإلكتروني</label>
+          <input type="email" id="contact-email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">رسالتك</label>
+          <textarea id="contact-message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn final-checkout-btn">إرسال الرسالة</button>
+      </form>
+
+      <aside class="order-summary-box">
+        <h2>معلومات التواصل</h2>
+        <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@masar-rahal.com">info@masar-rahal.com</a></p>
+        <p><strong>واتساب:</strong> <a href="https://wa.me/966500000000">+966 50 000 0000</a></p>
+        <p><strong>ساعات العمل:</strong> يومياً من 9 صباحاً حتى 9 مساءً</p>
+        <p><strong>الموقع:</strong> الرياض، المملكة العربية السعودية</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="terms.html">سياسة الاستخدام</a>
+      <a href="return-policy.html">سياسة الإرجاع</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+    </div>
+    <p>&copy; 2025 مسار رحال.</p>
+    <div class="social-icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-snapchat-ghost"></i>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.checkout-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('✅ تم إرسال رسالتك بنجاح! سنقوم بالرد عليك قريباً.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
