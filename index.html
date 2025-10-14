@@ -3,73 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مسار رحال - الصفحة الرئيسية</title>
+  <title>مسار رحال - مغامرتك تبدأ من هنا</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <header class="header">
-    <a href="index.html" class="logo">
-      <img src="images/logo.jpeg" alt="شعار مسار رحال" class="logo-img" />
-    </a>
-    <nav class="navbar">
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">من نحن</a>
-      <a href="adventure-boxes.html">بوكسات المغامرات</a>
-      <a href="firstaid-bags.html">حقائب الإسعافات</a>
-      <a href="contact.html">اتصل بنا</a>
-      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpeg" alt="شعار مسار رحال" class="logo-img" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="products.html">المنتجات</a>
+        <a href="contact.html">اتصل بنا</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero-banner">
     <div class="hero-content">
-      <h1>مرحبًا بك في مسار رحال</h1>
-      <p>نحن نقدم أفضل المنتجات للمغامرين والمسافرين، من بوكسات الرحلات إلى حقائب الإسعافات.</p>
-      <a href="adventure-boxes.html" class="btn">استعرض البوكسات الآن</a>
+      <h1>اكتشف مغامرتك القادمة</h1>
+      <p>بوكسات مجهزة، حقائب إسعافات، ومستلزمات سفر مصممة لتحمل كل مغامرة.</p>
+      <a href="products.html" class="btn">تصفح المنتجات</a>
     </div>
   </section>
 
-  <main class="products-section">
-    <div class="page-title-box">
-      <h2 style="text-align:center;">منتجات مصنوعة من مواد وتقنيات استثنائية</h2>
-      <p style="text-align:center;">هذه الحقائب والصناديق صممت لتحمل مغامرات السفر. اكتشف المجموعة الكاملة الآن.</p>
-    </div>
-
+  <section class="products-showcase">
+    <h2 class="section-title">منتجاتنا</h2>
     <div class="products-grid">
-      <a href="adventure-boxes.html" class="product-card">
-        <h3>بوكسات المغامرة</h3>
-        <p>ابتداءً من 159 ر.س</p>
-      </a>
-      <a href="firstaid-bags.html" class="product-card">
-        <h3>حقائب الإسعافات</h3>
-        <p>ابتداءً من 89 ر.س</p>
-      </a>
-      <a href="travel-bags.html" class="product-card">
+      <div class="product-card">
+        <img src="images/box-desert.jpeg" alt="بوكس البر" />
+        <h3>بوكس البر</h3>
+        <p>159 ر.س</p>
+        <a href="box-desert.html" class="btn">تفاصيل المنتج</a>
+      </div>
+      <div class="product-card">
+        <img src="images/firstaid-bag.jpeg" alt="حقيبة إسعافات" />
+        <h3>حقيبة إسعافات أولية</h3>
+        <p>89 ر.س</p>
+        <a href="firstaid-bags.html" class="btn">تفاصيل المنتج</a>
+      </div>
+      <div class="product-card">
+        <img src="images/travel-bag.jpeg" alt="مستلزمات السفر" />
         <h3>مستلزمات السفر</h3>
-        <p>ابتداءً من 179 ر.س</p>
-      </a>
+        <p>179 ر.س</p>
+        <a href="travel-bags.html" class="btn">تفاصيل المنتج</a>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="about-section">
+    <h2 class="section-title">من نحن</h2>
+    <p>نحن في مسار رحال نؤمن بأن كل رحلة تستحق أن تكون مجهزة بأفضل الأدوات. نقدم منتجات مختارة بعناية لعشاق المغامرات والسفر، بجودة عالية وتصميم عملي يلبي احتياجاتك في البر والبحر والجو.</p>
+  </section>
 
   <section class="reviews-section">
-    <h2 class="section-title">آراء عملائنا</h2>
+    <h2 class="section-title">آراء العملاء</h2>
     <div class="reviews-grid">
       <div class="review-card">
         <p>🌟🌟🌟🌟🌟</p>
-        <p>"بوكس البحر كان ممتاز! كل شيء مرتب وجاهز للطلعة."</p>
-        <span>- سارة من الدمام</span>
+        <p>"بوكس البر كان متكامل جدًا، وفر عليّ وقت وجهد في تجهيز الرحلة!"</p>
+        <span>- خالد من الرياض</span>
       </div>
       <div class="review-card">
         <p>🌟🌟🌟🌟</p>
-        <p>"بوكس البر وفر لي كل الأدوات اللي أحتاجها، تجربة رائعة."</p>
-        <span>- فهد من الرياض</span>
-      </div>
-      <div class="review-card">
-        <p>🌟🌟🌟🌟🌟</p>
-        <p>"طلبت بوكس الإسعافات الكبير، وكان فعلاً متكامل ومفيد."</p>
-        <span>- نواف من أبها</span>
+        <p>"جودة المنتجات ممتازة والتوصيل سريع. أنصح فيه بشدة."</p>
+        <span>- نورة من جدة</span>
       </div>
     </div>
   </section>
