@@ -3,56 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>إتمام الدفع - مسار رحال</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>إتمام الطلب - مسار رحال</title>
   <link rel="stylesheet" href="checkout-style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="checkout.js" defer></script>
 </head>
 <body>
+  <main class="checkout-form">
+    <h2>إتمام الطلب</h2>
+    <form id="checkoutForm">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" required />
 
-  <header class="header">
-    <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
-    <nav class="nav">
-      <a href="index.html">الرئيسية</a>
-      <a href="adventure-boxes.html">بوكسات المغامرات</a>
-      <a href="firstaid-bags.html">حقائب الإسعافات</a>
-      <a href="mailto:info@masar-rahal.com">تواصل معنا</a>
-    </nav>
-    <div class="icons">
-      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-      <i class="fas fa-user"></i>
-    </div>
-  </header>
+      <label for="address">العنوان</label>
+      <textarea id="address" required></textarea>
 
-  <main class="checkout-container">
-    <h1 class="page-title">إتمام عملية الشراء</h1>
+      <label for="phone">رقم الجوال</label>
+      <input type="tel" id="phone" required />
 
-    <div class="checkout-layout">
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" required />
 
-      <form class="checkout-form">
-        <h2>معلومات العميل</h2>
-
-        <div class="form-group">
-          <label for="name">الاسم الكامل</label>
-          <input type="text" id="name" required />
-        </div>
-
-        <div class="form-group">
-          <label for="phone">رقم الجوال</label>
-          <input type="tel" id="phone" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">البريد الإلكتروني</label>
-          <input type="email" id="email" />
-        </div>
-
-        <h2>عنوان الشحن</h2>
-
-        <div class="form-group">
-          <label for="address">العنوان</label>
-          <input type="text" id="address" required />
-        </div>
+      <button type="submit">تأكيد الطلب</button>
+    </form>
+  </main>
+</body>
+</html>
 
         <div class="form-group">
           <label for="city">المدينة</label>
@@ -136,3 +111,4 @@
   <script src="checkout.js"></script>
 </body>
 </html>
+
