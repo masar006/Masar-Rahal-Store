@@ -5,7 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>بوكسات المغامرة - مسار رحال</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    .product-description {
+      font-size: 0.9em;
+      color: #666;
+      margin: 5px 0 10px;
+    }
+    .add-to-cart-btn {
+      display: inline-block;
+      background-color: #8a2be2;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .add-to-cart-btn:hover {
+      background-color: #6a1aab;
+    }
+  </style>
 </head>
 <body>
 
@@ -15,7 +34,7 @@
       <a href="index.html">الرئيسية</a>
       <a href="adventure-boxes.html">بوكسات المغامرات</a>
       <a href="firstaid-bags.html">حقائب الإسعافات</a>
-      <a href="mailto:info@masar-rahal.com">تواصل معنا</a>
+      <a href="contact.html">تواصل معنا</a>
     </nav>
     <div class="icons">
       <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -27,13 +46,92 @@
     <h1 class="page-title">بوكسات المغامرة</h1>
 
     <div class="products-grid">
+
+      <!-- بوكس البحر -->
       <div class="product-card">
-        <img src="images/box-desert.jpeg" alt="بوكس البر" />
+        <img src="images/box-beach.jpeg" alt="بوكس البحر" />
         <div class="product-details">
-          <div class="product-name">بوكس البر والتخييم</div>
-          <div class="price"><span class="current-price">799 ر.س</span></div>
+          <div class="product-name">بوكس البحر</div>
+          <p class="product-description">كل ما تحتاجينه ليوم مثالي على الشاطئ، عملي ومقاوم للماء.</p>
+          <div class="price"><span class="current-price">199 ر.س</span></div>
+          <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
         </div>
       </div>
+
+      <!-- بوكس البر -->
+      <div class="product-card">
+        <img src="images/box-camping.jpeg" alt="بوكس البر" />
+        <div class="product-details">
+          <div class="product-name">بوكس البر</div>
+          <p class="product-description">بوكس متكامل لعشّاق التخييم، يحتوي على كل الأساسيات.</p>
+          <div class="price"><span class="current-price">249 ر.س</span></div>
+          <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+        </div>
+      </div>
+
+      <!-- بوكس السفر الخارجي -->
+      <div class="product-card">
+        <img src="images/box-travel.jpeg" alt="بوكس السفر الخارجي" />
+        <div class="product-details">
+          <div class="product-name">بوكس السفر الخارجي</div>
+          <p class="product-description">مثالي لتنظيم أغراضك أثناء الرحلات الطويلة.</p>
+          <div class="price"><span class="current-price">179 ر.س</span></div>
+          <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+        </div>
+      </div>
+
+      <!-- بوكس السفر الويكند -->
+      <div class="product-card">
+        <img src="images/box-weekend.jpeg" alt="بوكس السفر الويكند" />
+        <div class="product-details">
+          <div class="product-name">بوكس السفر (الويكند)</div>
+          <p class="product-description">مخصص للطلعات القصيرة، أنيق ومريح.</p>
+          <div class="price"><span class="current-price">159 ر.س</span></div>
+          <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+        </div>
+      </div>
+
+      <!-- بوكس الإسعافات الصغير -->
+      <div class="product-card">
+        <img src="images/box-firstaid-s.jpeg" alt="بوكس الإسعافات الصغير" />
+        <div class="product-details">
+          <div class="product-name">بوكس الإسعافات الأولية الصغير</div>
+          <p class="product-description">مناسب للسيارة أو الاستخدام اليومي.</p>
+          <div class="price"><span class="current-price">89 ر.س</span></div>
+          <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+        </div>
+      </div>
+
+      <!-- بوكس الإسعافات الكبير -->
+      <div class="product-card">
+        <img src="images/box-firstaid-l.jpeg" alt="بوكس الإسعافات الكبير" />
+        <div class="product-details">
+          <div class="product-name">بوكس الإسعافات الأولية الكبير</div>
+          <p class="product-description">متكامل للطوارئ والرحلات الطويلة.</p>
+          <div class="price"><span class="current-price">149 ر.س</span></div>
+          <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="terms.html">سياسة الاستخدام</a>
+      <a href="return-policy.html">سياسة الإرجاع</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+    </div>
+    <p>&copy; 2025 مسار رحال.</p>
+    <div class="social-icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-snapchat-ghost"></i>
+    </div>
+  </footer>
+
+</body>
+</html>
 
       <div class="product-card">
         <img src="images/box-travel.jpeg" alt="بوكس السفر" />
