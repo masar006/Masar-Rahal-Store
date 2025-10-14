@@ -4,111 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>إتمام الطلب - مسار رحال</title>
-  <link rel="stylesheet" href="checkout-style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="checkout.js" defer></script>
 </head>
 <body>
-  <main class="checkout-form">
-    <h2>إتمام الطلب</h2>
-    <form id="checkoutForm">
+
+  <header class="header">
+    <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
+    <nav class="navbar">
+      <a href="index.html">الرئيسية</a>
+      <a href="adventure-boxes.html">بوكسات المغامرات</a>
+      <a href="firstaid-bags.html">حقائب الإسعافات</a>
+      <a href="contact.html">اتصل بنا</a>
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+  </header>
+
+  <main class="products-section">
+    <h1 class="page-title">إتمام عملية الشراء</h1>
+    <form class="checkout-form">
       <label for="name">الاسم الكامل</label>
       <input type="text" id="name" required />
 
-      <label for="address">العنوان</label>
-      <textarea id="address" required></textarea>
-
-      <label for="phone">رقم الجوال</label>
+      <label for="phone">رقم الهاتف</label>
       <input type="tel" id="phone" required />
 
       <label for="email">البريد الإلكتروني</label>
       <input type="email" id="email" required />
 
-      <button type="submit">تأكيد الطلب</button>
+      <label for="address">العنوان</label>
+      <textarea id="address" required></textarea>
+
+      <label for="city">المدينة</label>
+      <input type="text" id="city" required />
+
+      <label for="postal">الرمز البريدي</label>
+      <input type="text" id="postal" required />
+
+      <h3>طريقة الشحن</h3>
+      <label><input type="radio" name="shipping" value="standard" required /> شحن عادي</label><br />
+      <label><input type="radio" name="shipping" value="express" /> شحن سريع</label>
+
+      <h3>طريقة الدفع</h3>
+      <label><input type="radio" name="payment" value="visa" required /> Visa / MasterCard</label><br />
+      <label><input type="radio" name="payment" value="stc" /> STC Pay</label><br />
+      <label><input type="radio" name="payment" value="apple" /> Apple Pay</label>
+
+      <button type="submit" class="btn btn-primary btn-final-checkout-btn">إرسال الطلب</button>
     </form>
-  </main>
-</body>
-</html>
-
-        <div class="form-group">
-          <label for="city">المدينة</label>
-          <input type="text" id="city" required />
-        </div>
-
-        <div class="form-group">
-          <label for="postal">الرمز البريدي</label>
-          <input type="text" id="postal" />
-        </div>
-
-        <h2>طريقة الشحن</h2>
-        <div class="shipping-methods">
-          <label><input type="radio" name="shipping" checked /> شحن قياسي (3-5 أيام)</label>
-          <label><input type="radio" name="shipping" /> شحن سريع (1-2 يوم)</label>
-        </div>
-
-        <h2>طريقة الدفع</h2>
-        <div class="payment-methods-radio">
-          <label><input type="radio" name="payment" checked /> STC Pay</label>
-          <label><input type="radio" name="payment" /> Mada</label>
-          <label><input type="radio" name="payment" /> Apple Pay</label>
-          <label><input type="radio" name="payment" /> الدفع عند الاستلام</label>
-        </div>
-
-        <button type="submit" class="btn primary-btn final-checkout-btn">تأكيد الطلب</button>
-
-        <p class="agreement-text">
-          بالضغط على "تأكيد الطلب"، فإنك توافق على <a href="#">الشروط والأحكام</a> و <a href="#">سياسة الخصوصية</a>.
-        </p>
-      </form>
-
-      <aside class="order-summary-box">
-        <h2>ملخص الطلب</h2>
-
-        <div class="product-summary-item">
-          <img src="images/box-travel.jpeg" alt="بوكس السفر" />
-          <div>
-            <div class="product-name-sm">بوكس السفر الخارجي</div>
-            <div class="product-qty-sm">الكمية: 1</div>
-          </div>
-        </div>
-
-        <div class="product-summary-item">
-          <img src="images/box-firstaid-s.jpeg" alt="حقيبة الإسعافات" />
-          <div>
-            <div class="product-name-sm">حقيبة الإسعافات (صغير)</div>
-            <div class="product-qty-sm">الكمية: 2</div>
-          </div>
-        </div>
-
-        <hr />
-        <div class="summary-row"><span>المجموع الفرعي</span><span>739 ر.س</span></div>
-        <div class="summary-row"><span>الشحن</span><span>يحدد لاحقًا</span></div>
-        <div class="summary-row total-row"><span>الإجمالي</span><span>739 ر.س</span></div>
-
-        <div class="payment-methods">
-          <img src="images/stcpay-icon.jpeg" alt="STC Pay">
-          <img src="images/mada-icon.jpeg" alt="Mada">
-          <img src="images/applepay-icon.jpeg" alt="Apple Pay">
-        </div>
-      </aside>
-
-    </div>
   </main>
 
   <footer class="footer">
-    <div class="footer-links">
-      <a href="#">سياسة الاستخدام</a>
-      <a href="#">سياسة الإرجاع</a>
-      <a href="#">الأسئلة الشائعة</a>
-    </div>
-    <p>&copy; 2025 مسار رحال.</p>
-    <div class="social-icons">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-snapchat-ghost"></i>
-    </div>
+    <p>&copy; 2025 مسار رحال. جميع الحقوق محفوظة.</p>
   </footer>
 
-  <script src="checkout.js"></script>
 </body>
 </html>
-
