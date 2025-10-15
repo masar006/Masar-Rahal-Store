@@ -10,30 +10,71 @@
 <body>
 
   <header class="header">
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.jpeg" alt="شعار مسار رحال" /></a>
-    </div>
-    <nav class="navbar">
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">من نحن</a>
-      <a href="adventure-boxes.html">بوكسات المغامرات</a>
-      <a href="firstaid-bags.html">حقائب الإسعافات</a>
-      <a href="contact.html" class="active">اتصل بنا</a>
-    </nav>
-    <div class="icons">
-      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpeg" alt="شعار مسار رحال" class="logo-img" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">اتصل بنا</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </nav>
     </div>
   </header>
 
-  <main class="products-section">
-    <h1 class="page-title">اتصل بنا</h1>
-    <form class="checkout-form">
+  <main class="contact-section">
+    <h2 class="section-title">اتصل بنا</h2>
+    <p>لأي استفسار أو ملاحظة، يسعدنا تواصلك معنا عبر النموذج التالي:</p>
+    <form class="contact-form">
       <label for="name">الاسم الكامل</label>
-      <input type="text" id="name" required />
+      <input type="text" id="name" name="name" required />
 
       <label for="email">البريد الإلكتروني</label>
-      <input type="email" id="email" required />
+      <input type="email" id="email" name="email" required />
 
+      <label for="message">رسالتك</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">إرسال</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/logo.jpeg" alt="شعار مسار رحال" class="footer-logo" />
+        <p>
+          في مسار رحال، نجهز لك بوكسات السفر والمغامرات بعناية، تجمع بين الجودة والعملية والتفاصيل اللي تهمك. لأننا نؤمن أن كل رحلة تستحق تجهيز يليق بها، صممنا لك منتجات تنطق مغامرة وتزيد من متعة كل تجربة.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>روابط مهمة</h4>
+        <ul>
+          <li><a href="terms.html">سياسة الاستخدام والخصوصية</a></li>
+          <li><a href="return-policy.html">سياسة الإرجاع والاستبدال</a></li>
+          <li><a href="faq.html">الأسئلة الشائعة</a></li>
+          <li><a href="contact.html">طرق التواصل</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>تابعنا</h4>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 مسار رحال. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
       <label for="message">الرسالة</label>
       <textarea id="message" rows="5" required></textarea>
 
